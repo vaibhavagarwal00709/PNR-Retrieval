@@ -18,7 +18,7 @@ function App() {
 
   const handleGetPnrStatus = async () => {
     try {
-      const response = await axios.get(`https://decaptcha-pnr-backend.onrender.com/finpredict?pnrnumber=${pnrNumber}`);
+      const response = await axios.get(`https://pnr-retrieval-5h73.onrender.com/finpredict?pnrnumber=${pnrNumber}`);
       setPnrStatus(response.data);
       setError('');
     } catch (error) {
